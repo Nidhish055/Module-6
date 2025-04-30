@@ -1,42 +1,55 @@
-# Exp.No:27  
+
 ## Operator Overloading
 
 ---
 
 ### AIM  
-To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(10, 21)` and `Ob2 = Complex(2, 3)` represent complex numbers.
+
+To write a Python program to perform addition of two complex numbers using the binary '+' operator overloading.
 
 ---
 
 ### ALGORITHM
 
-1. **Start the Program.**
-2. **Define the Complex class**:
-   - Define the constructor `__init__()` to accept two parameters: `real` and `imag` (representing the real and imaginary parts of the complex number).
-   - Assign these values to `self.real` and `self.imag` respectively.
-3. **Define the `__truediv__()` method** to perform the division of two complex numbers:
-   - Calculate the real part of the result as the division of `self.real` by `other.real`.
-   - Calculate the imaginary part of the result as the division of `self.imag` by `other.imag`.
-   - Return a new Complex object with the calculated real and imaginary parts.
-4. **Define the `__repr__()` method** to represent the complex number as a string.
-   - Return a string formatted to display the real and imaginary parts with one decimal place using `f"{self.real:.1f}, {self.imag:.1f}"`.
-5. **Create two objects of the Complex class**:
-   - `Ob1 = Complex(10, 21)` represents the complex number `10 + 21i`.
-   - `Ob2 = Complex(2, 3)` represents the complex number `2 + 3i`.
-6. **Perform the division operation**: Use the `/` operator to divide `Ob1` by `Ob2`. This will call the `__truediv__()` method.
-7. **Print the result**: Print the result of the division, which will be formatted by the `__repr__()` method.
-8. **End the Program.**
+ 1. Start the program.
+ 2. Define a class named 'complex' with a constructor (__init__) that accepts two parameters: a and b.
+ 3. Initialize instance variables self.a and self.b with the given values.
+ 4. Define the __add__ method to overload the '+' operator.
+ 5. Inside the __add__ method, subtract other.a from self.a and other.b from self.b, and return the result as a tuple.
+ 6. Create two objects of the class with given values (e.g., Ob1 = complex(1, 2), Ob2 = complex(2, 3)).
+ 7. Use the '+' operator to add the two objects (Ob1 + Ob2), which will call the __add__ method.
+ 8. Store the result in a new object (Ob3) and print the result.
+ 9. End the program.
 
 ---
 
 ### PROGRAM
 
-```
+```python
+
+# Name : Nidhish B
+# Reg no. 212223050032
+
+class complex:
+	def __init__(self, a, b):
+		self.a = a
+		self.b = b
+
+	def __sub__(self, other):
+		return self.a - other.a, self.b - other.b
+
+Ob1 = complex(1, 2)
+Ob2 = complex(2, 3)
+Ob3 = Ob1 - Ob2
+print(Ob3)
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/7e11e656-45f5-49b7-b5df-6cd49c11e168)
 
 ### RESULT
+
+Thus the python program to perform division of two complex numbers using the binary '+' operator overloading is verified and successfully executed.
 
