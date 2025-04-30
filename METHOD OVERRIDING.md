@@ -1,4 +1,4 @@
-# Exp.No:26  
+
 ## Method Overriding
 
 ---
@@ -33,11 +33,41 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 
 ### PROGRAM
 
-```
+```python
+
+# Name: Nidhish B
+# Reg No: 212223050032
+
+class Bird:
+    def intro(self):
+        print("There are many types of birds.")
+	
+    def flight(self):
+        print("Most of the birds can fly but some cannot.")
+
+class sparrow(Bird):
+    def intro(self):
+        print("Sparrows can fly.")
+	
+class ostrich(Bird):
+    def flight(self):
+        print("Ostriches cannot fly.")
+	
+obj_bird = Bird()
+obj_bird.intro()
+obj_bird.flight()
+obj_bird.intro()
+obj_spr = sparrow()
+obj_spr.intro()
+obj_bird.intro()
+obj_ost = ostrich()
+obj_ost.flight()
+
 
 ```
 
 ### OUTPUT
-
+![image](https://github.com/user-attachments/assets/bb65b306-99aa-424a-a351-6a991e5f895c)
 
 ### RESULT
+Thus,a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()` are verified.
