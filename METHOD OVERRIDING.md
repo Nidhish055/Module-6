@@ -70,4 +70,4 @@ obj_ost.flight()
 ![image](https://github.com/user-attachments/assets/bb65b306-99aa-424a-a351-6a991e5f895c)
 
 ### RESULT
-Thus,a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()` are verified.
+Thus the python program to create a parent class and to inherit two child classes with the same method is successfully executed.
